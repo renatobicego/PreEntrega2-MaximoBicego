@@ -1,0 +1,156 @@
+/* Inicio */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  nav {
+    background-color: azure;
+    height: 100px;
+  }
+  .imagen {
+    height: 70px;
+    padding-left: 20px;
+  }
+  
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 40 1fr;
+    grid-template-areas: "fotos fotos"
+    "presentacion presentacion"
+    "presentacion presentacion";
+  }
+  
+  .fotos{
+  grid-area: fotos;
+  } 
+  
+  
+  .carousel-item img {
+    max-height: 800px;
+    width: 200px;
+  }
+  
+  .contenedorP{
+    grid-area: presentacion;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .presentacion {
+    line-height: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+  }
+  .presentacion h2{
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .presentacion p {
+    font-size: 20px;
+  }
+  
+  
+  
+  footer {
+    background-color: azure;
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contacto {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      line-height: 15px;
+  }
+  
+  
+  .socialMedia {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;    
+  }
+  
+  .links{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .insta{
+      color: darkred;
+  }
+  
+  
+  
+  
+  /* Sobre nosotros */
+  
+  .cartas{
+    min-height: calc(100vh - 100px - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imgMama {
+      height: 250px;
+    }
+    
+    .imgPapa {
+      height: 250px;
+    } 
+  
+  
+  
+    /*Servicios  */
+  
+  .servicios{
+    min-height: calc(100vh - 100px - 120px);
+  }
+  
+  
+  /* Contacto */
+  
+  .formContenedor{
+    min-height: calc(100vh - 100px - 120px);
+  }
+    
+  
+  @media (max-width:768px) {
+    /* Inicio */
+      .contenedorP{
+          margin-top: 2px;
+      }
+      .presentacion p {
+          font-size: 17px;
+        }
+        .mapa{
+          height: 300px;
+          width: 550px;
+        }
+  
+  /* Servicios */
+  
+  .servicios{
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios h3{
+    text-align: center;
+  }
+  .servicios2{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  }
+  
+  
+  
+  
